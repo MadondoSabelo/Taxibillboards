@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Billboards Ads - Coming Soon</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px; /* Adjust this width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #19ad23;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="email"] {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="email"]:focus {
+            border-color: #15832b;
+        }
+        input[type="submit"] {
+            background-color: #054310;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #15832b;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <meta name="description" content="Taxi Billboards Ads - Innovative taxi wrap advertising solutions coming soon. Stay tuned!">
+    <meta property="og:title" content="Taxi Billboards Ads - Coming Soon">
+    <meta property="og:description" content="Innovative taxi wrap advertising solutions coming soon. Stay tuned!">
+    <meta property="og:image" content="path/to/social-image.jpg">
+    <meta property="og:url" content="http://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("subscription-form").addEventListener("submit", function(event) {
+                const emailInput = document.querySelector('input[name="email"]');
+                const email = emailInput.value;
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (!emailPattern.test(email)) {
+                    alert("Please enter a valid email address.");
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Taxi Billboards Ads Logo">
+        </div>
+        <h1>Welcome to Taxi Billboards Ads</h1>
+        <p>Where Creativity Drives Visibility</p>
+        
+        <h2>About Us</h2>
+        <p>At Taxi Billboards Ads, we're redefining the way you advertise on the move. With our innovative taxi wrap advertising solutions, your brand will stand out in the bustling streets like never before. Stay tuned for the launch of our website to learn more about how we can elevate your brand visibility and drive your message forward.</p>
+        
+        <h2>Connect With Us</h2>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="https://www.facebook.com/sabelomadondo" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/mcmservicesgroup" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        
+        <h2>Contact Us</h2>
+        <p>Got questions or inquiries? We'd love to hear from you! Reach out to us at:</p>
+        
+        <p>Phone: +27 81 028 1587</p>
+        
+        <h2>Stay Tuned</h2>
+        <p>Sign up for our newsletter to be the first to know when we launch!</p>
+        <form id="subscription-form" action="subscribe.php" method="post">
+            <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
+            <input type="submit" value="Subscribe">
+        </form>
+        
+        <h2>In Partnership With MCM Services Group</h2>
+        <p>Taxi Billboards Ads is proud to be part of the MCM Services Group family. Together, we're revolutionizing the advertising landscape with innovative solutions that drive results.</p>
+    </div>
+    <footer>
+        <p>Taxi Billboards Ads &COPY; 2024 by MCM group | Airmoyen Web Wizards</p>
+    </footer>
+</body>
+</html>
